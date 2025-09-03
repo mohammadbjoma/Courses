@@ -1,0 +1,32 @@
+[
+
+  {
+    "title": "Math",
+    "description": "Math is a puzzle; every problem you solve is a step closer to seeing the world clearly. Struggle is proof you’re growing—keep going.",
+  "image":"img&icon/mathbackground.jpg" 
+   ,"hours":"corses hour: 15"
+    ,"student":"Student nubmer:30"
+  },
+  {
+    "title": "Physics",
+    "description": "Physics is the language of the universe—every law you learn is like unlocking a secret of reality.",
+"image":"img&icon/physicsbackground.jpg" 
+  ,"hours":"corses hour: 14"
+    ,"student":"Student nubmer:29 "
+  },
+  {
+    "title": "Biology",
+    "description": "Biology is the story of life—every cell, every gene, every breath is a chapter waiting to be understood.",
+"image":"img&icon/Biologycourse.jpg"  
+ ,"hours":"corses hour: 12"
+    ,"student":"Student nubmer:20 "
+  }
+  ,{
+    "title": "Chemistry",
+    "description": "Chemistry is the magic of the universe explained — where tiny atoms create endless possibilities.",
+"image":"img&icon/chemical.webp"  
+ ,"hours":"corses hour: 9"
+    ,"student":"Student nubmer:12 "
+  }
+  
+]
