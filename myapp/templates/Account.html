@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+{%load static%}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+</head>
+
+<body>
+    <div class="account-continer">
+        <div class="login">
+            <div class="acount-nav-bar">
+                <a href="/"><img src="{% static 'img/KQDdIVbMTAedg17GOqnV_i_courses-01.webp'%}" alt="corsues"></a>
+
+            </div>
+            <div class="account-login">
+                <label for="#">Name</label>
+                <input type="text" placeholder="Name">
+                <label for="#">Password</label>
+                <input type="password" id="pwd" name="pwd" placeholder="Password">
+                <div class="login-buttons">
+                    <button>Log In </button>
+                    <a href="#"> <button>New Student</button></a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="account-img">
+            <img src="{% static 'img/account-img.avif'%}" alt="account-img">
+        </div>
+    </div>
+
+
+</body>
+
+</html>

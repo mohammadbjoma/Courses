@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+{%load static%}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+</head>
+
+<body>
+    <div class="nav-bar">
+        <div class="left-side">
+            <a href="/"><img src="{% static 'img/KQDdIVbMTAedg17GOqnV_i_courses-01.webp'%}" alt="corsues"></a>
+        </div>
+        <ul>
+            <li><a href="/">Home page</a></li>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">Our Courses </a>
+                <div class="dropdown-content">
+                    <a href="#">Math</a>
+                    <a href="#">Physics</a>
+                    <a href="#">Biology</a>
+                    <a href="#">Chemistry</a>
+                </div>
+            </div>
+            <li><a href="/loginP">My Account</a></li>
+            <li><a href="/loginP"><img src="{% static 'img/log-in.png'%}" alt="log-in"></a></li>
+
+        </ul>
+
+    </div>
+
+    <div class="img-continer">
+        <img src="{% static 'img/courses.jpg'%}" alt="photo">
+
+    </div>
+    <div class="info">
+        <img src="{% static 'img/info-img.jpg'%}" alt="info">
+        <div class="discrption">
+            <h1>About Us</h1>
+            <p>We are an online learning platform dedicated to providing high-quality courses across different fields.
+                Our
+                mission is to make education accessible and engaging by connecting learners with expert instructors,
+                interactive lessons, and a supportive community. We help students grow, track their progress, and
+                achieve
+                certifications that empower their future.</p>
+        </div>
+
+
+    </div>
+    <h1 class="page-title">Available Courses</h1>
+    <div id="courses-container" class="courses-grid"></div>
+    <div class="form-container">
+        <h2>Add a New Course</h2>
+        <form action="/addcourse" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <input type="text" name="title" placeholder="Course Title" required>
+            <textarea name="description" placeholder="Course Description" required></textarea>
+            <input type="text" name="hours" placeholder="Course Hours" required>
+            <input type="text" name="student" placeholder="Number of Students" required>
+            <input type="file" name="image" required>
+            <button type="submit">Add Course</button>
+        </form>
+
+        <img onclick="topFunction()" class="up-img" title="Go to top" src="{% static 'img/up-arrow.png'%}" alt="">
+    </div>
+    <footer>
+        <div class="continer">
+            <div class="topfooter">
+                <div class="company-info">
+                    <h2>A Life Changer Courses</h2>
+                </div>
+                <button>Contact Us </button>
+            </div>
+            <div class="links">
+                <div class="link">
+                    <h3>Online-courses</h3>
+                    <p>we are created for you to get you from zero to a hero in any course you want its just a kilck
+                        button
+                        and you will get all the information needed to improve in your course</p>
+                    <div class="socialM-links">
+                        <a href="#"><img src="{% static 'img/facebook-app-symbol.png'%}" alt="facebook-app-symbol"></a>
+                        <a href="#"><img src="{% static 'img/instagram.png'%}" alt="instagram"></a>
+                        <a href="#"><img src="{% static 'img/linkedin.png'%}" alt="linkedin"></a>
+
+                    </div>
+                </div>
+                <div class="link-info">
+                    <div class="left-section">
+                        <img src="{% static 'img/phone-call.png'%}" alt="phone-call">
+                        <img src="{% static 'img/email.png'%}" alt="email">
+                        <img src="{% static 'img/locaion.png'%}" alt="locaion">
+                    </div>
+                    <div class="right-section">
+                        <p>
+                            +000-000-000-000 <br>
+                            example@gmail.com <br>
+                            location <br>
+                        </p>
+                    </div>
+
+                </div>
+                <div class="useful-links">
+                    <h3>Useful links</h3>
+                    <div class="ref">
+                        <a href="">Career</a>
+                        <a href="">FAQs</a>
+                        <a href="">Privacy Police</a>
+                        <a href="">Blogs</a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="{% static 'js/script.js'%}">
+
+    </script>
+</body>
+
+</html>
